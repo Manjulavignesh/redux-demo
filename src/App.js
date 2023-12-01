@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
-import { decreament, increament } from './Store/counter';
+import {INCREMENTBY2,DECREMENTBY2 } from './Store/counter';
 
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
       <h1>The Counter Value is {value}</h1>
-   <button onClick={()=>dispatch(increament())}>Increament</button>
-   <button onClick={()=>dispatch(decreament())}>Decreamemt</button>
+   <button onClick={()=>dispatch(INCREMENTBY2())}>Increament</button>
+   <button onClick={()=>dispatch(DECREMENTBY2())}>Decreamemt</button>
    </div>
   );
 }
