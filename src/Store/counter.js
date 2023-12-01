@@ -5,10 +5,10 @@ export const counterSlice = createSlice({
   initialState: { value: 0 },
   reducers: {
     INCREMENTBY2: (state) => {
-      state.value += 2;
+      state.value += 5;
     },
     DECREMENTBY2: (state) => {
-      state.value -= 2;
+      state.value -= 5;
     },
   },
 });
